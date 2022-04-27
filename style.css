@@ -1,0 +1,62 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: black;
+  margin: 0;
+  color: white;
+  margin: 0px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.header {
+  margin: 0;
+}
+
+img{
+  /* max-width: 50%; */
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.floattext {
+  z-index: 3;
+  padding-right: 800px;
+  position: relative;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+section.content {
+  z-index: -1;
+  text-align: left;
+  margin-top: 32px;
+  padding-right: 1300px;
+  padding-left: 50px;
+  list-style-type: none;
+  position: fixed;
+}
+
+mark.pink{
+  background-color: fuschia;
+}
+
+/* .cards {
+  align-items: center;
+  display: inline;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cards img{
+    margin: 10px;
+    border: 3px solid #000;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+    max-width: 25vw;
+} */
