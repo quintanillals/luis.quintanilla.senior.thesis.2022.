@@ -47,16 +47,74 @@ mark.pink{
   background-color: fuschia;
 }
 
-/* .cards {
-  align-items: center;
-  display: inline;
-  flex-direction: column;
-  flex-wrap: wrap;
+mark.DeepSkyBlue{
+  background-color: DeepSkyBlue;
 }
 
-.cards img{
-    margin: 10px;
-    border: 3px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
-    max-width: 25vw;
-} */
+
+.images{
+  z-index: 4;
+}
+
+.video{
+  z-index: 7;
+  text-align: left;
+  /* margin-top: 180px;
+  margin-right: 50px;
+  margin-left: 1300px; */
+  position: fixed;
+  display: inline-block;
+  overflow: visible;
+  padding-left: 50px;
+  padding-top: 640px
+
+}
+
+.scroll{
+  height: 650px;
+  width: 340px;
+  z-index: -2;
+  text-align: left;
+  margin-top: 0;
+  margin-right: 50px;
+  margin-left: 1300px;
+  position: fixed;
+  display: block;
+  overflow: visible;
+}
+
+.scroll-text{
+    height: 100%;
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -moz-animation: my-animation 40s linear infinite;
+    -webkit-animation: my-animation 40s linear infinite;
+    animation: my-animation 40s linear infinite;
+    animation-delay:-5s;
+    animation-play-state: running;
+}
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-200%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-200%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-200%);
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+}
